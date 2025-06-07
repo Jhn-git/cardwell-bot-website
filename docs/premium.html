@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot - Premium Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="antialiased">
+
+    <header class="relative text-center overflow-hidden min-h-[250px] md:min-h-[300px] flex flex-col items-center justify-center">
+        <!-- Banner image placeholder, replace with your own -->
+        <div class="absolute inset-0 w-full h-full bg-black/60 z-10"></div>
+        <div class="relative z-20 container mx-auto px-4 py-8 md:py-12 flex flex-col items-center">
+            <!-- Bot icon placeholder, replace with your own -->
+            <h1 class="text-4xl sm:text-5xl font-bold goblin-gradient-text mb-2">Unlock Premium Features</h1>
+            <p class="text-lg sm:text-xl text-gray-200">Supercharge your Discord bot with premium options!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pb-12 pt-8">
+        <section id="intro-pitch" class="section-card text-center">
+            <p class="mb-6 text-lg leading-relaxed">
+                This template supports a premium tier for your Discord bot. Add your own details here to describe the benefits and how users can support your project!
+            </p>
+        </section>
+
+        <section id="tiers" class="section-card">
+            <h2 class="text-3xl font-semibold mb-8 text-center text-emerald-400">Choose Your Tier</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <div class="tier-card p-6 bg-gray-800/50 rounded-lg shadow-lg border border-gray-700 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-purple-400 mb-3">Supporter</h3>
+                    <p class="text-xl font-bold text-gray-300 mb-3">$1.99/month</p>
+                    <p class="text-gray-400 mb-4">Support the project and help keep the servers running for everyone!</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6 flex-grow">
+                        <li>Basic premium badge</li>
+                    </ul>
+                    <a href="#" class="button-secondary w-full text-center mt-auto" target="_blank" rel="noopener noreferrer">
+                        Become a Supporter
+                    </a>
+                </div>
+
+                <div class="tier-card p-6 bg-purple-900/30 rounded-lg shadow-xl border-2 border-purple-500 flex flex-col ring-2 ring-purple-400 ring-offset-2 ring-offset-gray-900">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-1">Premium</h3>
+                    <p class="text-xl font-bold text-gray-100 mb-3">$4.99/month</p>
+                    <p class="text-purple-300 mb-4">Unlock all premium features for your server. Customize this section for your own bot's premium features!</p>
+                    <ul class="list-disc list-inside text-purple-200 space-y-2 mb-6 flex-grow">
+                        <li>All supporter features</li>
+                        <li>Access to exclusive commands</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="button-primary w-full text-center mt-auto" target="_blank" rel="noopener noreferrer">
+                        Go Premium
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-activate" class="section-card">
+            <h2 class="text-3xl font-semibold mb-6 text-center text-emerald-400">How to Activate Premium</h2>
+            <ol class="list-decimal list-inside space-y-4 text-lg bg-gray-800/40 p-6 rounded-lg shadow">
+                <li>Choose a premium tier and complete your pledge.</li>
+                <li>Connect your Discord account to your payment platform (if needed).</li>
+                <li>Join the support server or follow instructions to activate premium on your server.</li>
+                <li>Enjoy your new features!</li>
+            </ol>
+        </section>
+
+        <section id="faq" class="section-card">
+            <h2 class="text-3xl font-semibold mb-6 text-center text-emerald-400">Frequently Asked Questions</h2>
+            <div class="space-y-4 text-lg">
+                <details class="bg-gray-800/40 p-4 rounded-lg shadow cursor-pointer">
+                    <summary>What is included in premium?</summary>
+                    <p>Premium includes all features listed above. You can customize this FAQ for your own bot.</p>
+                </details>
+                <details class="bg-gray-800/40 p-4 rounded-lg shadow cursor-pointer">
+                    <summary>How do I activate premium?</summary>
+                    <p>Follow the steps above or contact support for help.</p>
+                </details>
+                <details class="bg-gray-800/40 p-4 rounded-lg shadow cursor-pointer">
+                    <summary>Can I cancel anytime?</summary>
+                    <p>Yes, you can cancel your premium subscription at any time.</p>
+                </details>
+            </div>
+        </section>
+        
+        <section class="text-center mt-12">
+             <a href="./index.html" class="button back-button">
+                &larr; Back to Homepage
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="py-8 text-center border-t border-gray-700">
+        <p class="text-gray-400">&copy; <span id="current-year"></span> Your Discord Bot Project. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
